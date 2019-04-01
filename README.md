@@ -1,5 +1,4 @@
-# MyTechBlog
-
+<h2 align="center">MyTechBlog</h2>
 
 ### WHY
 After using Wordpress and Media I finally decided to create my own tech blog.
