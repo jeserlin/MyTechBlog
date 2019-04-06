@@ -21,8 +21,12 @@ const FlexContainer = styled.div`
   hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
   hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
   hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
-  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
-);
+  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px);
+
+  /* RWD */
+  @media (max-width: 450px) {
+    height: 80px;
+  }
 `;
 
 const NavContent = styled.div`
@@ -32,6 +36,11 @@ const NavContent = styled.div`
   line-height: 75px;
   font-size: 30px;
   width: 560px;
+
+  /* RWD */
+  @media (max-width: 450px) {
+    padding: 0;
+  }
 `;
 
 const Text = styled.div`
@@ -40,15 +49,27 @@ const Text = styled.div`
 `;
 
 const Title = styled(Text)`
-    font-size: 3rem;
-    font-family: monospace;
-    margin-top: 170px;
-    border-left: 10px solid #ffffff;
-    border-right: 10px solid #ffffff;
+  font-size: 3rem;
+  font-family: monospace;
+  margin-top: 170px;
+  border-left: 10px solid #ffffff;
+  border-right: 10px solid #ffffff;
+
+  /* RWD */
+  @media (max-width: 450px) {
+    font-size: 1.5rem;
+    margin-top: 0;
+    border: none;
+  }
 `;
 
 const  SubTitle = styled(Text)`
   font-size: 1.5rem;
+
+  /* RWD */
+  @media (max-width: 450px) {
+    display: none;
+  }
 `;
 
 class NavBar extends Component {
