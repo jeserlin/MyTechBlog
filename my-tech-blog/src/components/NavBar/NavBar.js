@@ -24,8 +24,11 @@ const FlexContainer = styled.div`
   hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px);
 
   /* RWD */
-  @media (max-width: 450px) {
+  @media (max-width: 576px) {
     height: 80px;
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+    height: 300px;
   }
 `;
 
@@ -38,7 +41,7 @@ const NavContent = styled.div`
   width: 560px;
 
   /* RWD */
-  @media (max-width: 450px) {
+  @media (max-width: 576px) {
     padding: 0;
   }
 `;
@@ -56,10 +59,14 @@ const Title = styled(Text)`
   border-right: 10px solid #ffffff;
 
   /* RWD */
-  @media (max-width: 450px) {
+  @media (max-width: 576px) {
     font-size: 1.5rem;
     margin-top: 0;
     border: none;
+  }
+  @media (min-width: 577px) and (max-width: 768px) {
+    font-size: 2rem;
+    margin-top: 80px;
   }
 `;
 
@@ -67,7 +74,7 @@ const  SubTitle = styled(Text)`
   font-size: 1.5rem;
 
   /* RWD */
-  @media (max-width: 450px) {
+  @media (max-width: 576px) {
     display: none;
   }
 `;
