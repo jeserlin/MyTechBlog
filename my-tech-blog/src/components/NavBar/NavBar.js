@@ -5,7 +5,7 @@ const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
   filter: saturate(.8);
-  height:500px;
+  height:300px;
 
   /* css pattern form https://leaverou.github.io/css3patterns/ */
   background-color: hsl(34, 53%, 82%);
@@ -27,9 +27,6 @@ const FlexContainer = styled.div`
   @media (max-width: 576px) {
     height: 80px;
   }
-  @media (min-width: 577px) and (max-width: 768px) {
-    height: 300px;
-  }
 `;
 
 const NavContent = styled.div`
@@ -48,13 +45,12 @@ const NavContent = styled.div`
 
 const Text = styled.div`
   color: #ffffff;
-  font-family: monospace;
 `;
 
 const Title = styled(Text)`
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: monospace;
-  margin-top: 170px;
+  margin-top: 80px;
   border-left: 10px solid #ffffff;
   border-right: 10px solid #ffffff;
 
@@ -63,10 +59,6 @@ const Title = styled(Text)`
     font-size: 1.5rem;
     margin-top: 0;
     border: none;
-  }
-  @media (min-width: 577px) and (max-width: 768px) {
-    font-size: 2rem;
-    margin-top: 80px;
   }
 `;
 
