@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Article from './components/Article';
+import ArticleList from './static/data/article';
 import NavBar from './components/NavBar';
 
 import './App.css';
@@ -22,9 +23,13 @@ class App extends Component {
         <NavBar />
         <Container>
           <div className="row">
-            <Article />
-            <Article />
-            <Article />
+          {
+            ArticleList.map((a, i) => {
+              return (
+                <Article key={`article_${i}`}/>
+              );
+            })
+          }
           </div>
         </Container>
       </div>
