@@ -1,4 +1,6 @@
+import { connect } from 'react-redux';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
@@ -40,14 +42,14 @@ const Desc = styled(Text)`
 
 class Article extends Component {
   render() {
+    const data = this.props.general.articleList;
     return (
       <div className='col-md'>
         <Image className='rounded'/>
         <div className='row'>
-          <Title>Title</Title>
+          <Title>{data[this.props.seq].title}</Title>
           <Desc>
-            description. description. description.
-            description. description. description.
+          {data[this.props.seq].description}
           </Desc>
         </div>
       </div>
@@ -55,4 +57,14 @@ class Article extends Component {
   }
 }
 
-export default Article;
+Article.propTypes = {
+  general: PropTypes.shape({
+    articleList: PropTypes.arrayOf(PropTypes.object).isRequired,
+  }),
+};
+
+const mapStateToProps = state => ({
+  ...state,
+ });
+
+export default connect(mapStateToProps)(Article);

@@ -1,9 +1,11 @@
+import { connect } from 'react-redux';
 import classnames from 'classnames';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import { getArticleList } from './actions/index';
 import Article from './components/Article';
-import ArticleList from './static/data/article';
 import NavBar from './components/NavBar';
 
 import './App.css';
@@ -17,6 +19,11 @@ const Container = styled(_Container)`
 `;
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.getArticleList();
+  }
+
   render() {
     return (
       <div className="App">
@@ -24,9 +31,12 @@ class App extends Component {
         <Container>
           <div className="row">
           {
-            ArticleList.map((a, i) => {
+            this.props.general.articleList.map((a, i) => {
               return (
-                <Article key={`article_${i}`}/>
+                <Article 
+                  key={`article_${i}`}
+                  seq={i}
+                />
               );
             })
           }
@@ -37,4 +47,16 @@ class App extends Component {
   }
 }
 
-export default App;
+App.propTypes = {
+  general: PropTypes.shape({
+    articleList: PropTypes.arrayOf(PropTypes.object).isRequired,
+  }),
+};
+
+const mapStateToProps = state => ({
+  ...state,
+ });
+
+export default connect(mapStateToProps, {
+  getArticleList,
+})(App);
