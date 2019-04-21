@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { getArticleList } from './actions/index';
+import MainArticle from './components/MainArticle';
 import Article from './components/Article';
 import NavBar from './components/NavBar';
 
@@ -29,15 +30,18 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <Container>
+          <MainArticle />
           <div className="row">
           {
             this.props.general.articleList.map((a, i) => {
-              return (
-                <Article 
-                  key={`article_${i}`}
-                  seq={i}
-                />
-              );
+              if(i > 0) {
+                return (
+                  <Article 
+                    key={`article_${i}`}
+                    seq={i}
+                  />
+                );
+              }
             })
           }
           </div>

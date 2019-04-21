@@ -7,33 +7,34 @@ import {Image, Title, Desc} from '../Common/Common';
 
 const Container =  ({ className, children }) => (
   <div
-    className={classnames('col-md-6 col-lg-4', className)}
+    className={classnames('row', className)}
     style={{marginBottom: '2rem'}}
     >
     {children}
   </div>
 );
 
-class Article extends Component {
+class MainArticle extends Component {
   render() {
     const data = this.props.general.articleList;
+    const title = data[0] ? data[0].title : '';
+    const desc = data[0] ? data[0].description : '';
+    console.log(this.props);
     return (
       <Container>
-        <Image className='rounded'/>
-        <div className='row'>
-          <div className='col-md-12'>
-            <Title>{data[this.props.seq].title}</Title>
-            <Desc>
-              {data[this.props.seq].description}
-            </Desc>
-          </div>
+        <div className='col-md-12 col-lg-8'>
+          <Image className='rounded'/>
+        </div>
+        <div className='col-md-12 col-lg-4'>
+          <Title>{title}</Title>
+          <Desc>{desc}</Desc>
         </div>
       </Container>
     );
   }
 }
 
-Article.propTypes = {
+MainArticle.propTypes = {
   general: PropTypes.shape({
     articleList: PropTypes.arrayOf(PropTypes.object).isRequired,
   }),
@@ -43,4 +44,4 @@ const mapStateToProps = state => ({
   ...state,
  });
 
-export default connect(mapStateToProps)(Article);
+export default connect(mapStateToProps)(MainArticle);

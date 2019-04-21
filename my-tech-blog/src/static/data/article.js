@@ -17,6 +17,12 @@ const ArticleList = [
     link: 'test3',
     thumbnail: 'test3',
   },
+  {
+    title: 'test4',
+    description: 'desc4',
+    link: 'test4',
+    thumbnail: 'test4',
+  },
 ];
 
 export default ArticleList;
