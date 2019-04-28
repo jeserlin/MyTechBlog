@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 
-import {Image, Title, Desc} from '../Common/Common';
+import {Image, Title, Desc, StyledLink} from '../Common/Common';
 
 const Container =  ({ className, children }) => (
   <div
@@ -19,10 +19,14 @@ class Article extends Component {
     const data = this.props.general.articleList;
     return (
       <Container>
-        <Image className='rounded'/>
+        <StyledLink to={data[this.props.seq].link}>
+          <Image className='rounded'/> 
+        </StyledLink>
         <div className='row'>
           <div className='col-md-12'>
-            <Title>{data[this.props.seq].title}</Title>
+            <StyledLink to={data[this.props.seq].link}>
+              <Title>{data[this.props.seq].title}</Title>
+            </StyledLink>
             <Desc>
               {data[this.props.seq].description}
             </Desc>

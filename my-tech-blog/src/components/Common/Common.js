@@ -1,5 +1,16 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+// Remove Link style from react-router
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+`;
+
+// Home page article block
 export const Image = styled.img`
   width: 100%;
   height: 300px;
@@ -7,6 +18,7 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.div`
+  color: #000000;
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
@@ -27,3 +39,5 @@ export const Desc = styled.div`
     font-size: 1rem;
   }
 `;
+
+// Article page

@@ -2,8 +2,7 @@ import { connect } from 'react-redux';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-
-import {Image, Title, Desc} from '../Common/Common';
+import {Image, Title, Desc, StyledLink} from '../Common/Common';
 
 const Container =  ({ className, children }) => (
   <div
@@ -17,16 +16,21 @@ const Container =  ({ className, children }) => (
 class MainArticle extends Component {
   render() {
     const data = this.props.general.articleList;
+    const link = data[0] ? data[0].link : '';
     const title = data[0] ? data[0].title : '';
     const desc = data[0] ? data[0].description : '';
     console.log(this.props);
     return (
       <Container>
         <div className='col-md-12 col-lg-8'>
-          <Image className='rounded'/>
+          <StyledLink to={link}>
+            <Image className='rounded'/>
+          </StyledLink>
         </div>
         <div className='col-md-12 col-lg-4'>
-          <Title>{title}</Title>
+          <StyledLink to={link}>
+            <Title>{title}</Title>
+          </StyledLink>
           <Desc>{desc}</Desc>
         </div>
       </Container>

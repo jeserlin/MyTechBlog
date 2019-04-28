@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
@@ -5,9 +6,10 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { getArticleList } from './actions/index';
-import MainArticle from './components/MainArticle';
 import Article from './components/Article';
+import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
+import Bootstrap4Cards from './containers/Bootstrap4Cards';
 
 import './App.css';
 
@@ -20,32 +22,51 @@ const Container = styled(_Container)`
 `;
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.index = this.index.bind(this);
+    this.bootstrap4Cards = this.bootstrap4Cards.bind(this);
+  }
 
   componentDidMount() {
     this.props.getArticleList();
+  }
+
+  index() {
+    return (
+      <Container>
+        <MainArticle />
+        <div className="row">
+        {
+          this.props.general.articleList.map((a, i) => {
+            if(i > 0) {
+              return (
+                <Article 
+                  key={`article_${i}`}
+                  seq={i}
+                />
+              );
+            }
+          })
+        }
+        </div>
+      </Container>
+    );
+  }
+  
+  bootstrap4Cards() {
+    return <Bootstrap4Cards />;
   }
 
   render() {
     return (
       <div className="App">
         <NavBar />
-        <Container>
-          <MainArticle />
-          <div className="row">
-          {
-            this.props.general.articleList.map((a, i) => {
-              if(i > 0) {
-                return (
-                  <Article 
-                    key={`article_${i}`}
-                    seq={i}
-                  />
-                );
-              }
-            })
-          }
-          </div>
-        </Container>
+        <Router>
+          <Route path="/" exact component={this.index} />
+          <Route path="/bootstrap-4.0-Cards/" component={this.bootstrap4Cards} />
+        </Router>
       </div>
     );
   }
