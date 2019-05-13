@@ -41,3 +41,23 @@ export const Desc = styled.div`
 `;
 
 // Article page
+export const ArticleTitle = styled.div`
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  text-align: left;
+`;
+
+export const ArticleContent = styled.div`
+  color: #555555;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  text-align: left;
+
+  .hightlight {
+    color: #ba6b5e;
+  }
+
+  .emphasize {
+    color: #aaaa55;
+  }
+`;

@@ -44,12 +44,12 @@ const NavContent = styled.div`
 `;
 
 const Text = styled.div`
+  font-family: monospace;
   color: #ffffff;
 `;
 
 const Title = styled(Text)`
   font-size: 2rem;
-  font-family: monospace;
   margin-top: 80px;
   border-left: 10px solid #ffffff;
   border-right: 10px solid #ffffff;
