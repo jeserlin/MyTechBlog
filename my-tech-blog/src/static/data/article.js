@@ -1,10 +1,10 @@
 const ArticleList = [
   {
-    title: 'Bootstrap 4.0 - Cards (card-columns)',
-    description: 'Bootstrap 4.0 中的Cards的筆記。',
+    title: 'Bootstrap 4 - Cards (card-columns)',
+    description: 'Bootstrap 4 提供了類似Masonry的排列方式，讓大家用CSS就能達到類似的效果。本篇文章紀錄新component -- Cards Columns在畫面上的呈現，以及如何設定一些客製化的樣式。(內含CodePen範例)',
     type: 'note',
-    link: '/bootstrap-4.0-Cards',
-    thumbnail: 'test',
+    link: '/bootstrap4CardColumns',
+    thumbnail: 'bootstrap4.png',
   },
   {
     title: 'test2',

@@ -18,16 +18,16 @@ class MainArticle extends Component {
     const data = this.props.general.articleList;
     const link = data[0] ? data[0].link : '';
     const title = data[0] ? data[0].title : '';
+    const thumbnail = data[0] ? `/img/${data[0].thumbnail}` : '';
     const desc = data[0] ? data[0].description : '';
-    console.log(this.props);
     return (
       <Container>
-        <div className='col-md-12 col-lg-8'>
+        <div className='col-md-12 col-lg-4'>
           <StyledLink to={link}>
-            <Image className='rounded'/>
+            <Image className='img-thumbnail rounded' src={thumbnail} />
           </StyledLink>
         </div>
-        <div className='col-md-12 col-lg-4'>
+        <div className='col-md-12 col-lg-8'>
           <StyledLink to={link}>
             <Title>{title}</Title>
           </StyledLink>

@@ -65,7 +65,7 @@ class App extends Component {
         <NavBar />
         <Router>
           <Route path="/" exact component={this.index} />
-          <Route path="/bootstrap-4.0-Cards/" component={this.bootstrap4Cards} />
+          <Route path="/bootstrap4CardColumns/" component={this.bootstrap4Cards} />
         </Router>
       </div>
     );

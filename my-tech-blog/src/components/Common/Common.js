@@ -22,6 +22,7 @@ export const Title = styled.div`
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
+  margin-bottom: 1rem;
 
   /* RWD */
   @media (max-width: 576px) {
