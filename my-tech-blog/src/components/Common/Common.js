@@ -15,6 +15,11 @@ export const Image = styled.img`
   width: 100%;
   height: 300px;
   background-color: rgba(204,144,135,0.8);
+
+  &:hover {
+    background-color: rgba(204,144,135,1);
+    transition: background-color .3s linear;
+  }
 `;
 
 export const Title = styled.div`
