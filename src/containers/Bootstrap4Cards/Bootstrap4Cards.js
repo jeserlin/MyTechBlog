@@ -1,7 +1,7 @@
+import { ArticleContent, ArticleTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
-import { ArticleTitle, ArticleContent } from '../../components/Common/Common';
+import styled from 'styled-components';
 
 const Iframe = styled.iframe`
   width: 100%;

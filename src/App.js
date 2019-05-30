@@ -1,17 +1,17 @@
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { connect } from 'react-redux';
-import classnames from 'classnames';
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import './App.css';
 
-import { getArticleList } from './actions/index';
+import React, { Component } from 'react';
+import { Route, HashRouter as Router } from "react-router-dom";
+
 import Article from './components/Article';
+import Bootstrap4Cards from './containers/Bootstrap4Cards';
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
-import Bootstrap4Cards from './containers/Bootstrap4Cards';
-
-import './App.css';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
+import { connect } from 'react-redux';
+import { getArticleList } from './actions/index';
+import styled from 'styled-components';
 
 const _Container = ({ className, children }) => (
   <div className={classnames('container', className)}>{children}</div>

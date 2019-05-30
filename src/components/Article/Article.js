@@ -1,9 +1,9 @@
-import { connect } from 'react-redux';
-import classnames from 'classnames';
-import PropTypes from 'prop-types';
+import {Desc, Image, StyledLink, Title} from '../Common/Common';
 import React, { Component } from 'react';
 
-import {Image, Title, Desc, StyledLink} from '../Common/Common';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
+import { connect } from 'react-redux';
 
 const Container =  ({ className, children }) => (
   <div
