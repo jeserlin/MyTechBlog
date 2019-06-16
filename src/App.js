@@ -5,6 +5,7 @@ import { Route, HashRouter as Router } from "react-router-dom";
 
 import Article from './components/Article';
 import Bootstrap4Cards from './containers/Bootstrap4Cards';
+import Footer from './components/Footer';
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
 import PropTypes from 'prop-types';
@@ -68,6 +69,7 @@ class App extends Component {
           <Route path="/" exact component={this.index} />
           <Route path="/bootstrap4CardColumns/" component={this.bootstrap4Cards} />
         </Router>
+        <Footer/>
       </div>
     );
   }
