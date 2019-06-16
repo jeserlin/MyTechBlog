@@ -21,6 +21,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.div`
+  font-size: 1.6rem;
   color: #ffffff;
 `;
 

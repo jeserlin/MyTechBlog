@@ -36,14 +36,9 @@ export const Title = styled.div`
 `;
 
 export const Desc = styled.div`
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   text-align: left;
   color: rgba(0,0,0,.54)!important;
-
-  /* RWD */
-    @media (max-width: 576px) {
-    font-size: 1rem;
-  }
 `;
 
 // Article page
@@ -61,7 +56,7 @@ export const ArticleSubTitle = styled.div`
 
 export const ArticleContent = styled.div`
   color: #555555;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 3.5rem;
   text-align: left;
 

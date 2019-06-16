@@ -50,21 +50,21 @@ const Text = styled.div`
 `;
 
 const Title = styled(Text)`
-  font-size: 2rem;
+  font-size: 4rem;
   margin-top: 80px;
   border-left: 10px solid #ffffff;
   border-right: 10px solid #ffffff;
 
   /* RWD */
   @media (max-width: 576px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 0;
     border: none;
   }
 `;
 
 const  SubTitle = styled(Text)`
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   /* RWD */
   @media (max-width: 576px) {
