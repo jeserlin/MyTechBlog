@@ -11,7 +11,7 @@ class Bootstrap4Cards extends Component {
   render() {
     return (
       <div className='container'>
-        <ArticleTitle>[筆記]Bootstrap 4.0 – Cards (card columns)</ArticleTitle>
+        <ArticleTitle>[筆記]Bootstrap 4 – Cards (card columns)</ArticleTitle>
         <ArticleContent>
           Bootstrap 4 中的Cards 取代了 Bootstrap 3中的 panels、wells、thumbnails。<br />
           Card columns 可以將cards瀑布版的排列，<br />

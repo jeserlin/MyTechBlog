@@ -17,11 +17,11 @@ const Container =  ({ className, children }) => (
 class Article extends Component {
   render() {
     const data = this.props.general.articleList;
-    // src={`/img/${data[this.props.seq].thumbnail}`} 
+    const thumbnail = data[this.props.seq] ? require(`../../static/img/${data[this.props.seq].thumbnail}`) : '';
     return (
       <Container>
         <StyledLink to={data[this.props.seq].link}>
-          <Image className='rounded' /> 
+          <Image className='rounded' src={thumbnail} /> 
         </StyledLink>
         <div className='row'>
           <div className='col-md-12'>

@@ -20,7 +20,6 @@ class MainArticle extends Component {
     const link = data[0] ? data[0].link : '';
     const title = data[0] ? data[0].title : '';
     const thumbnail = data[0] ? require(`../../static/img/${data[0].thumbnail}`) : '';
-    console.log(thumbnail);
     const desc = data[0] ? data[0].description : '';
     return (
       <Container>
