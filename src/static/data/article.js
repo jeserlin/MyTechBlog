@@ -1,7 +1,7 @@
 const ArticleList = [
   {
     title: 'styled-component - WHY & HOW',
-    description: 'desc2',
+    description: 'styled-component 讓我們在開發react時可以更便利地處理css同時也大大提升了component的維護性。(內含CodePen範例)',
     type: 'note',
     link: '/styledComponent',
     thumbnail: 'styled-component.png',
