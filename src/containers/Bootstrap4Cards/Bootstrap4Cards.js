@@ -1,11 +1,5 @@
-import { ArticleContent, ArticleTitle } from '../../components/Common/Common';
+import { ArticleContent, ArticleTitle, Iframe } from '../../components/Common/Common';
 import React, { Component } from 'react';
-
-import styled from 'styled-components';
-
-const Iframe = styled.iframe`
-  width: 100%;
-`;
 
 class Bootstrap4Cards extends Component {
   render() {

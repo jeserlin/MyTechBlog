@@ -1,7 +1,5 @@
-import { ArticleContent, ArticleSubTitle, ArticleTitle } from '../../components/Common/Common';
+import { ArticleContent, ArticleSubTitle, ArticleTitle, Iframe } from '../../components/Common/Common';
 import React, { Component } from 'react';
-
-import styled from 'styled-components';
 
 class StyledComponent extends Component {
   render() {
@@ -10,8 +8,8 @@ class StyledComponent extends Component {
         <ArticleTitle>[筆記]styled-component - WHY & HOW</ArticleTitle>
         <ArticleSubTitle>WHY?</ArticleSubTitle>
         <ArticleContent>
-          踏入React的世界之後，在view的方面我們最常煩惱的大概就是 — 某個元素到底該不該被獨立成一個component？
-          之後還有沒有機會再次使用？component一多的時候要怎麼管理？
+          踏入React的世界之後，在view的方面我們最常煩惱的大概就是 — 某個元素到底該不該被獨立成一個component？<br />
+          之後還有沒有機會再次使用？component一多的時候要怎麼管理？<br />
           css class name 該如何妥善管理…根據props改變style有沒有更有效率的方法…<br />
           如果你有以上痛點也許styled-component可以解決你的問題。<br />
           使用styled-component到底有什麼優點呢：<br />
@@ -47,6 +45,15 @@ class StyledComponent extends Component {
           接下來在js中import元件，就可以開始了！<br />
           <span className='hightlight'>import styled from 'styled-components';</span><br />
           以下示範一個基本的使用方式：<br />
+          <Iframe height="350" scrolling="no" title="styled- component basic use" src="//codepen.io/jeserlin/embed/VJbjXY/?height=265&theme-id=0&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+            See the Pen <a href='https://codepen.io/jeserlin/pen/VJbjXY/'>styled- component basic use</a> by jeserlin chiu
+            (<a href='https://codepen.io/jeserlin'>@jeserlin</a>) on <a href='https://codepen.io'>CodePen</a>.
+          </Iframe><br />
+          其中比較需要注意的是，<br />
+          你的styled-component的命名第一個字母要<span className='hightlight'>大寫</span><br />
+          <span className='hightlight'>千萬記得你的styled-component要在render的外面define，</span><br />
+          不然會在每一次render的時候都建立一個新的component，<br />
+          這樣會造成無法cache而且大幅地拖慢render的速度喔。<br />
         </ArticleContent>
       </div>
     );

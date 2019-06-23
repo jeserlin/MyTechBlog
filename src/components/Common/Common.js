@@ -68,3 +68,7 @@ export const ArticleContent = styled.div`
     color: #aaaa55;
   }
 `;
+
+export const Iframe = styled.iframe`
+  width: 100%;
+`;
