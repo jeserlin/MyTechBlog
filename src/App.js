@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
 import PropTypes from 'prop-types';
+import ReactBootstrap from './containers/ReactBootstrap';
 import StyledComponent from './containers/StyledComponent';
 import classnames from 'classnames';
 import { connect } from 'react-redux';
@@ -67,6 +68,10 @@ class App extends Component {
     return <StyledComponent />
   }
 
+  reactBootstrap() {
+    return <ReactBootstrap />
+  }
+
   render() {
     return (
       <div className="App">
@@ -75,6 +80,7 @@ class App extends Component {
           <Route path="/" exact component={this.index} />
           <Route path="/bootstrap4CardColumns/" component={this.bootstrap4Cards} />
           <Route path="/styledComponent/" component={this.styledComponent} />
+          <Route path="/reactBootstrap/" component={this.reactBootstrap} />
         </Router>
         <Footer/>
       </div>
