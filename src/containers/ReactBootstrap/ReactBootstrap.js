@@ -43,9 +43,13 @@ class ReactBootstrap extends Component {
           再加入Bootstrap v3. 的css：<br />
           <span className='hightlight'>npm install bootstrap@3</span><br />
           當然你也可以手動地把bootstrap.css放在你的static路徑裡面，這就看個人習慣。<br />
-          如果是選擇用webpack的話，最後應該時會在dist裡面，可以去找找看<br />
+          如果是選擇用webpack的話，最後應該會在dist裡面，可以去找找看<br />
           最後我們在index.html中讀取就ok了。<br />
           以下提供一個使用範例：<br />
+          <Iframe height="350" scrolling="no" title="react-bootstrap example" src="//codepen.io/jeserlin/embed/rXVxRp/?height=265&theme-id=dark&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
+            See the Pen <a href='https://codepen.io/jeserlin/pen/rXVxRp/'>react-bootstrap example</a> by jeserlin chiu
+            (<a href='https://codepen.io/jeserlin'>@jeserlin</a>) on <a href='https://codepen.io'>CodePen</a>.
+          </Iframe>
         </ArticleContent>
       </div>
     );
