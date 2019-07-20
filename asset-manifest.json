@@ -1,16 +1,17 @@
 {
   "main.css": "/MyTechBlog/static/css/main.dd7bbe15.chunk.css",
-  "main.js": "/MyTechBlog/static/js/main.31d66582.chunk.js",
-  "main.js.map": "/MyTechBlog/static/js/main.31d66582.chunk.js.map",
+  "main.js": "/MyTechBlog/static/js/main.5325150e.chunk.js",
+  "main.js.map": "/MyTechBlog/static/js/main.5325150e.chunk.js.map",
   "runtime~main.js": "/MyTechBlog/static/js/runtime~main.6302f219.js",
   "runtime~main.js.map": "/MyTechBlog/static/js/runtime~main.6302f219.js.map",
   "static/js/2.4bb13900.chunk.js": "/MyTechBlog/static/js/2.4bb13900.chunk.js",
   "static/js/2.4bb13900.chunk.js.map": "/MyTechBlog/static/js/2.4bb13900.chunk.js.map",
   "index.html": "/MyTechBlog/index.html",
-  "precache-manifest.3d5c4425c413e1096f89aff6d25d740e.js": "/MyTechBlog/precache-manifest.3d5c4425c413e1096f89aff6d25d740e.js",
+  "precache-manifest.ec0ffec1aba4eb8afa444f5da1339422.js": "/MyTechBlog/precache-manifest.ec0ffec1aba4eb8afa444f5da1339422.js",
   "service-worker.js": "/MyTechBlog/service-worker.js",
   "static/css/main.dd7bbe15.chunk.css.map": "/MyTechBlog/static/css/main.dd7bbe15.chunk.css.map",
   "static/media/bootstrap4.png": "/MyTechBlog/static/media/bootstrap4.5d1cbe34.png",
+  "static/media/reactBootstrap.png": "/MyTechBlog/static/media/reactBootstrap.0291b182.png",
   "static/media/styled-component.png": "/MyTechBlog/static/media/styled-component.861cfda9.png",
   "static/media/yuan.png": "/MyTechBlog/static/media/yuan.3474e5f3.png"
 }
