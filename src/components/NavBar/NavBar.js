@@ -1,40 +1,24 @@
 import React, { Component } from 'react';
 
+import { FaHeart } from "react-icons/fa";
 import styled from 'styled-components';
 
 const FlexContainer = styled.div`
   display: flex;
   justify-content: center;
   filter: saturate(.8);
-  height: 300px;
+  height: 250px;
 
-  /* css pattern form https://leaverou.github.io/css3patterns/ */
-  background-color: hsl(34, 53%, 82%);
-  background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
-  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
-  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
-  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
-  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
-  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
-  ),
-  repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
-  hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
-  hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
-  hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
-  hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
-  hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px);
-
+  background-color: #e9d4b9;
   /* RWD */
   @media (max-width: 576px) {
-    height: 80px;
+    height: 60px;
   }
 `;
 
 const NavContent = styled.div`
-  background-color: rgba(204,144,135,0.8);
-  padding: 30px;
   text-align: center;
-  line-height: 75px;
+  line-height: 50px;
   font-size: 30px;
   width: 560px;
 
@@ -52,8 +36,6 @@ const Text = styled.div`
 const Title = styled(Text)`
   font-size: 4rem;
   margin-top: 80px;
-  border-left: 10px solid #ffffff;
-  border-right: 10px solid #ffffff;
 
   /* RWD */
   @media (max-width: 576px) {
@@ -79,6 +61,7 @@ class NavBar extends Component {
         <NavContent>
           <Title>Jeserlin's Blog</Title>
           <SubTitle>Front-end Developer</SubTitle>
+          <FaHeart style={{color: 'white', width: '2rem'}}/>
         </NavContent>
       </FlexContainer>
     );

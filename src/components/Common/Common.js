@@ -14,11 +14,15 @@ export const StyledLink = styled(Link)`
 export const Image = styled.img`
   width: 100%;
   height: 300px;
-  background-color: rgba(204,144,135,0.8);
+  border: #e9d4b9 1rem double;
+  -webkit-transition: 1s ease-in-out;
+       -moz-transition: 1s ease-in-out;
+        -ms-transition: 1s ease-in-out;
+         -o-transition: 1s ease-in-out;
+            transition: 1s ease-in-out;
 
   &:hover {
-    background-color: rgba(204,144,135,1);
-    transition: background-color .3s linear;
+    border: #e9d4b9 .2rem solid;
   }
 `;
 
