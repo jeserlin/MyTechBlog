@@ -10,11 +10,16 @@ import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
 import PropTypes from 'prop-types';
 import ReactBootstrap from './containers/ReactBootstrap';
+import ReactGA from 'react-ga';
 import StyledComponent from './containers/StyledComponent';
 import classnames from 'classnames';
 import { connect } from 'react-redux';
 import { getArticleList } from './actions/index';
 import styled from 'styled-components';
+
+// GA
+ReactGA.initialize('UA-138738889-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const _Container = ({ className, children }) => (
   <div className={classnames('container', className)}>{children}</div>
