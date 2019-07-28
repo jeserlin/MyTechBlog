@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "285c2c937b4b6fac2f0c",
+    "revision": "904de2c585c5b2e88566",
     "url": "/MyTechBlog/static/css/main.dd7bbe15.chunk.css"
   },
   {
-    "revision": "285c2c937b4b6fac2f0c",
-    "url": "/MyTechBlog/static/js/main.c5d58cef.chunk.js"
+    "revision": "904de2c585c5b2e88566",
+    "url": "/MyTechBlog/static/js/main.2515e314.chunk.js"
   },
   {
     "revision": "9d4ebaa74210618b0d88",
@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/MyTechBlog/static/media/yuan.3474e5f3.png"
   },
   {
-    "revision": "f7b3b0f693419f49d1350a356cb197b7",
+    "revision": "57b00d7541604d24a2f3d1ec9c74aa4a",
     "url": "/MyTechBlog/index.html"
   }
 ];
