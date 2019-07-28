@@ -21,7 +21,7 @@ class Article extends Component {
     return (
       <Container>
         <StyledLink to={data[this.props.seq].link}>
-          <Image className='rounded' src={thumbnail} /> 
+          <Image className='rounded' src={thumbnail} alt='img'/> 
         </StyledLink>
         <div className='row'>
           <div className='col-md-12'>
