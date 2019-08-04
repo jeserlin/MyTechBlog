@@ -20,13 +20,13 @@ const ArticleList = [
     thumbnail: 'reactBootstrap.png',
     description: 'React-Bootstrap的簡單介紹 & 範例。',
   },
-  // {
-  //   title: 'test4',
-  //   description: 'desc4',
-  //   type: 'note',
-  //   link: 'test4',
-  //   thumbnail: 'test4',
-  // },
+  {
+    title: '在React上設定GA Part1',
+    type: 'note',
+    link: '/ga1',
+    thumbnail: 'googleAnalytics.png',
+    description: '在React框架下輕鬆設定Google Analytics！',
+  },
 ];
 
 export default ArticleList;

@@ -41,9 +41,9 @@ class StyledComponent extends Component {
         <ArticleSubTitle>HOW?</ArticleSubTitle>
         <ArticleContent>
           首先下載styled-component：<br />
-          <span className='hightlight'>npm install –save styled-component</span><br />
+          <div className='hightlight code'>npm install –save styled-component</div>
           接下來在js中import元件，就可以開始了！<br />
-          <span className='hightlight'>import styled from 'styled-components';</span><br />
+          <div className='hightlight code'>import styled from 'styled-components';</div>
           以下示範一個基本的使用方式：<br />
           <Iframe height="350" scrolling="no" title="styled- component basic use" src="//codepen.io/jeserlin/embed/VJbjXY/?height=265&theme-id=0&default-tab=js,result" frameBorder="no" allowtransparency="true" allowFullScreen={true}>
             See the Pen <a href='https://codepen.io/jeserlin/pen/VJbjXY/'>styled- component basic use</a> by jeserlin chiu

@@ -31,7 +31,7 @@ export const Title = styled.div`
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 
   /* RWD */
   @media (max-width: 576px) {
@@ -54,8 +54,10 @@ export const ArticleTitle = styled.div`
 
 export const ArticleSubTitle = styled.div`
   font-size: 2rem;
+  font-weight: 600;
   margin: 2rem 0;
   text-align: left;
+  color: #6B5B95;
 `;
 
 export const ArticleContent = styled.div`
@@ -70,6 +72,13 @@ export const ArticleContent = styled.div`
 
   .emphasize {
     color: #aaaa55;
+  }
+
+  .code {
+    border: 1px solid #eaeaea;
+    padding: 1rem;
+    border-radius: .4rem;
+    background-color: #fcfcfc;
   }
 `;
 

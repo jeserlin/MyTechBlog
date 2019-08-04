@@ -39,9 +39,9 @@ class ReactBootstrap extends Component {
         <ArticleContent>
           使用react-bootstrap需要import react-bootstrap和bootstrap v3.的css。（現在已經有beta版支援v4嘍）<br />
           首先，加入react-bootstrap:<br />
-          <span className='hightlight'>npm install --save react-bootstrap</span><br />
+          <div className='hightlight code'>npm install --save react-bootstrap</div>
           再加入Bootstrap v3. 的css：<br />
-          <span className='hightlight'>npm install bootstrap@3</span><br />
+          <div className='hightlight code'>npm install bootstrap@3</div>
           當然你也可以手動地把bootstrap.css放在你的static路徑裡面，這就看個人習慣。<br />
           如果是選擇用webpack的話，最後應該會在dist裡面，可以去找找看<br />
           最後我們在index.html中讀取就ok了。<br />

@@ -6,6 +6,7 @@ import { Route, HashRouter as Router } from "react-router-dom";
 import Article from './components/Article';
 import Bootstrap4Cards from './containers/Bootstrap4Cards';
 import Footer from './components/Footer';
+import GA1 from './containers/GA1';
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
 import PropTypes from 'prop-types';
@@ -35,6 +36,9 @@ class App extends Component {
 
     this.index = this.index.bind(this);
     this.bootstrap4Cards = this.bootstrap4Cards.bind(this);
+    this.styledComponent = this.styledComponent.bind(this);
+    this.reactBootstrap = this.reactBootstrap.bind(this);
+    this.ga1 = this.ga1.bind(this);
   }
 
   componentDidMount() {
@@ -77,6 +81,10 @@ class App extends Component {
     return <ReactBootstrap />
   }
 
+  ga1() {
+    return <GA1 />
+  }
+
   render() {
     return (
       <div className="App">
@@ -86,6 +94,7 @@ class App extends Component {
           <Route path="/bootstrap4CardColumns/" component={this.bootstrap4Cards} />
           <Route path="/styledComponent/" component={this.styledComponent} />
           <Route path="/reactBootstrap/" component={this.reactBootstrap} />
+          <Route path="/ga1/" component={this.ga1} />
         </Router>
         <Footer/>
       </div>
