@@ -34,7 +34,7 @@ class GA1 extends Component {
           <div className='hightlight code'>import ReactGA from 'react-ga';</div>
           然後再初始化，記得換成自己的追蹤ID <br />
           <div className='hightlight code'>
-            // GA <br />
+            {'//'} GA <br />
             ReactGA.initialize('追蹤ID'); <br />
             ReactGA.pageview(window.location.pathname + window.location.search); <br />
           </div>
