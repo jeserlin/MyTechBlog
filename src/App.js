@@ -17,6 +17,7 @@ import classnames from 'classnames';
 import { connect } from 'react-redux';
 import { getArticleList } from './actions/index';
 import styled from 'styled-components';
+import withTracker from './tools/withTracker';
 
 // GA
 ReactGA.initialize('UA-138738889-1');
@@ -90,11 +91,11 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <Router>
-          <Route path="/" exact component={this.index} />
-          <Route path="/bootstrap4CardColumns/" component={this.bootstrap4Cards} />
-          <Route path="/styledComponent/" component={this.styledComponent} />
-          <Route path="/reactBootstrap/" component={this.reactBootstrap} />
-          <Route path="/ga1/" component={this.ga1} />
+          <Route path="/" exact component={withTracker(this.index)} />
+          <Route path="/bootstrap4CardColumns/" component={withTracker(this.bootstrap4Cards)} />
+          <Route path="/styledComponent/" component={withTracker(this.styledComponent)} />
+          <Route path="/reactBootstrap/" component={withTracker(this.reactBootstrap)} />
+          <Route path="/ga1/" component={withTracker(this.ga1)} />
         </Router>
         <Footer/>
       </div>
