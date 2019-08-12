@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "80e9e5168333e424a9ff",
+    "revision": "0b29c3ddcf824e95ad39",
     "url": "/MyTechBlog/static/css/main.dd7bbe15.chunk.css"
   },
   {
-    "revision": "80e9e5168333e424a9ff",
-    "url": "/MyTechBlog/static/js/main.2d81c531.chunk.js"
+    "revision": "0b29c3ddcf824e95ad39",
+    "url": "/MyTechBlog/static/js/main.74d60255.chunk.js"
   },
   {
     "revision": "9d4ebaa74210618b0d88",
     "url": "/MyTechBlog/static/js/runtime~main.6302f219.js"
   },
   {
-    "revision": "975424c9fa08f5885d9f",
-    "url": "/MyTechBlog/static/js/2.c6fd8a2c.chunk.js"
+    "revision": "8119fb9267372cea1e53",
+    "url": "/MyTechBlog/static/js/2.7dfc28e0.chunk.js"
   },
   {
     "revision": "c03d5f8f03da46303a31387a077319b9",
@@ -22,6 +22,10 @@ self.__precacheManifest = [
   {
     "revision": "9f4cea27bb130bf91c535f3d9d0f0c6a",
     "url": "/MyTechBlog/static/media/ga1_2.9f4cea27.png"
+  },
+  {
+    "revision": "c4e558ff1ca78402e29ebff8c45b33b4",
+    "url": "/MyTechBlog/static/media/ga2_1.c4e558ff.png"
   },
   {
     "revision": "5d1cbe34a9735953fd1af6ac18c13f8c",
@@ -44,7 +48,7 @@ self.__precacheManifest = [
     "url": "/MyTechBlog/static/media/yuan.3474e5f3.png"
   },
   {
-    "revision": "e859e8a555728290a0138b2a05c5e232",
+    "revision": "126277f9a6aa25888918860286ff4865",
     "url": "/MyTechBlog/index.html"
   }
 ];
