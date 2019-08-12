@@ -10,8 +10,8 @@ const Image =  styled.img`
 
 class GA1 extends Component {
   render() {
-    const image1 = require(`../../static/img/ga1/ga1_1.png`);
-    const image2 = require(`../../static/img/ga1/ga1_2.png`);
+    const image1 = require(`../../static/img/ga/ga1_1.png`);
+    const image2 = require(`../../static/img/ga/ga1_2.png`);
     return (
       <div className='container'>
         <ArticleTitle>[筆記]在React上設定GA Part1</ArticleTitle>

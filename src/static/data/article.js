@@ -27,6 +27,13 @@ const ArticleList = [
     thumbnail: 'googleAnalytics.png',
     description: '在React框架下輕鬆設定Google Analytics！',
   },
+  {
+    title: '在React上設定GA Part2',
+    type: 'note',
+    link: '/ga2',
+    thumbnail: 'googleAnalytics.png',
+    description: '在Google Analytics也能讀取react-router的路徑！',
+  },
 ];
 
 export default ArticleList;

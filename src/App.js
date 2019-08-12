@@ -7,6 +7,7 @@ import Article from './components/Article';
 import Bootstrap4Cards from './containers/Bootstrap4Cards';
 import Footer from './components/Footer';
 import GA1 from './containers/GA1';
+import GA2 from './containers/GA2';
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
 import PropTypes from 'prop-types';
@@ -86,6 +87,10 @@ class App extends Component {
     return <GA1 />
   }
 
+  ga2() {
+    return <GA2 />
+  }
+
   render() {
     return (
       <div className="App">
@@ -96,6 +101,7 @@ class App extends Component {
           <Route path="/styledComponent/" component={withTracker(this.styledComponent)} />
           <Route path="/reactBootstrap/" component={withTracker(this.reactBootstrap)} />
           <Route path="/ga1/" component={withTracker(this.ga1)} />
+          <Route path="/ga2/" component={withTracker(this.ga2)} />
         </Router>
         <Footer/>
       </div>
