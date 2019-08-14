@@ -1,4 +1,4 @@
-import {Desc, Image, StyledLink, Title} from '../Common/Common';
+import {Desc, Image, StyledLink, Title, UpdateTime} from '../Common/Common';
 import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
@@ -8,7 +8,7 @@ import styled from 'styled-components';
 
 const Container =  ({ className, children }) => (
   <div
-    className={classnames('col-sm-12, col-md-6', className)}
+    className={classnames('col-md-12, col-lg-6', className)}
     style={{marginBottom: '2rem'}}
     >
     {children}
@@ -48,7 +48,7 @@ class Article extends Component {
                   </Desc>
                 </div>
                 <div class="card-footer">
-                  <small class="text-muted">更新時間： {data[this.props.seq].time}</small>
+                  <UpdateTime>更新時間： {data[this.props.seq].time}</UpdateTime>
                 </div>
               </div>
             </div>
