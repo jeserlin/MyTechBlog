@@ -1,6 +1,7 @@
 const ArticleList = [
   {
     title: 'Bootstrap 4 - Cards (card-columns)',
+    time: '2019/08/14',
     type: 'note',
     link: '/bootstrap4CardColumns',
     thumbnail: 'bootstrap4.png',
@@ -8,13 +9,15 @@ const ArticleList = [
   },
   {
     title: 'styled-component - WHY & HOW',
+    time: '2019/08/14',
     type: 'note',
     link: '/styledComponent',
     thumbnail: 'styled-component.png',
-    description: 'styled-component 讓我們在開發react時可以更便利地處理css同時也大大提升了component的維護性。',
+    description: 'styled-component 讓我們更便利地處理css同時也大大提升了component的維護性。',
   },
   {
     title: 'React Bootstrap - WHY & HOW',
+    time: '2019/08/14',
     type: 'note',
     link: '/reactBootstrap',
     thumbnail: 'reactBootstrap.png',
@@ -22,6 +25,7 @@ const ArticleList = [
   },
   {
     title: '在React上設定GA Part1',
+    time: '2019/08/14',
     type: 'note',
     link: '/ga1',
     thumbnail: 'googleAnalytics.png',
@@ -29,6 +33,7 @@ const ArticleList = [
   },
   {
     title: '在React上設定GA Part2',
+    time: '2019/08/14',
     type: 'note',
     link: '/ga2',
     thumbnail: 'googleAnalytics.png',

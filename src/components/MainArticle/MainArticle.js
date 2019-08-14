@@ -25,7 +25,7 @@ class MainArticle extends Component {
       <Container>
         <div className='col-md-12 col-lg-4'>
           <StyledLink to={link}>
-            <Image className='img-thumbnail rounded' src={thumbnail} alt='img'/>
+            <Image className='rounded' src={thumbnail} alt='img'/>
           </StyledLink>
         </div>
         <div className='col-md-12 col-lg-8'>

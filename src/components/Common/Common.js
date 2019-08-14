@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // Remove Link style from react-router
 export const StyledLink = styled(Link)`
     text-decoration: none;
+    cursor: pointer;
 
     &:focus, &:hover, &:visited, &:link, &:active {
         text-decoration: none;
@@ -13,17 +14,7 @@ export const StyledLink = styled(Link)`
 // Home page article block
 export const Image = styled.img`
   width: 100%;
-  height: 300px;
-  border: #e9d4b9 1rem double;
-  -webkit-transition: 1s ease-in-out;
-       -moz-transition: 1s ease-in-out;
-        -ms-transition: 1s ease-in-out;
-         -o-transition: 1s ease-in-out;
-            transition: 1s ease-in-out;
-
-  &:hover {
-    border: #e9d4b9 .2rem solid;
-  }
+  max-width: 300px;
 `;
 
 export const Title = styled.div`
@@ -43,6 +34,7 @@ export const Desc = styled.div`
   font-size: 1.6rem;
   text-align: left;
   color: rgba(0,0,0,.54)!important;
+  min-height: 4.8rem;
 `;
 
 // Article page
