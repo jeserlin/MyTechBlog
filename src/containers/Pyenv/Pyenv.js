@@ -114,13 +114,13 @@ class Pyenv extends Component {
           整理一下這次用到的pyenv指令：
           <div className='code'>
             <ol>
-              <li><span className='hightlight'>pyenv commands</span> /* 列出全部可用指令 */</li>
-              <li><span className='hightlight'>pyenv install -1</span> /* 列出全部可下載版本 */</li>
-              <li><span className='hightlight'>pyenv install (version)</span> /* 下載特定版本python */</li>
-              <li><span className='hightlight'>pyenv versions</span> /* 列出電腦內的全部python版本 */</li>
-              <li><span className='hightlight'>pyenv virtualenv (version) (environment name)</span> /* 建立虛擬環境 */</li>
-              <li><span className='hightlight'>pyenv virtualenvs</span> /* 列出全部虛擬環境 */</li>
-              <li><span className='hightlight'>pyenv activate (environment name)</span> /* 進入特定虛擬環境 */</li>
+              <li><span className='hightlight'>pyenv commands</span> {'/* 列出全部可用指令 */'}</li>
+              <li><span className='hightlight'>pyenv install -1</span> {'/* 列出全部可下載版本 */'}</li>
+              <li><span className='hightlight'>pyenv install (version)</span> {'/* 下載特定版本python */'}</li>
+              <li><span className='hightlight'>pyenv versions</span> {'/* 列出電腦內的全部python版本 */'}</li>
+              <li><span className='hightlight'>pyenv virtualenv (version) (environment name)</span> {'/* 建立虛擬環境 */'}</li>
+              <li><span className='hightlight'>pyenv virtualenvs</span> {'/* 列出全部虛擬環境 */'}</li>
+              <li><span className='hightlight'>pyenv activate (environment name)</span> {'/* 進入特定虛擬環境 */'}</li>
             </ol>
           </div>
         </ArticleContent>
