@@ -45,13 +45,13 @@ export const UpdateTime = styled.div`
 
 // Article page
 export const ArticleTitle = styled.div`
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 2rem 0;
   text-align: left;
 `;
 
 export const ArticleSubTitle = styled.div`
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin: 2rem 0;
   text-align: left;

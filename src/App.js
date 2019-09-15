@@ -11,6 +11,7 @@ import GA2 from './containers/GA2';
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
 import PropTypes from 'prop-types';
+import Pyenv from './containers/Pyenv';
 import ReactBootstrap from './containers/ReactBootstrap';
 import ReactGA from 'react-ga';
 import StyledComponent from './containers/StyledComponent';
@@ -91,6 +92,9 @@ class App extends Component {
     return <GA2 />
   }
 
+  pyenv() {
+    return <Pyenv />
+  }
   render() {
     return (
       <div className="App">
@@ -102,6 +106,7 @@ class App extends Component {
           <Route path="/reactBootstrap/" component={withTracker(this.reactBootstrap)} />
           <Route path="/ga1/" component={withTracker(this.ga1)} />
           <Route path="/ga2/" component={withTracker(this.ga2)} />
+          <Route path="/pyenv/" component={withTracker(this.pyenv)} />
         </Router>
         <Footer/>
       </div>
