@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "110d7936d4ecb0dcb1e6",
+    "revision": "03ad0b25adee23f43d2a",
     "url": "/MyTechBlog/static/css/main.dd7bbe15.chunk.css"
   },
   {
-    "revision": "110d7936d4ecb0dcb1e6",
-    "url": "/MyTechBlog/static/js/main.5a40be9e.chunk.js"
+    "revision": "03ad0b25adee23f43d2a",
+    "url": "/MyTechBlog/static/js/main.b273be87.chunk.js"
   },
   {
     "revision": "9d4ebaa74210618b0d88",
     "url": "/MyTechBlog/static/js/runtime~main.6302f219.js"
   },
   {
-    "revision": "511831a10940a616fc2a",
-    "url": "/MyTechBlog/static/js/2.7668e889.chunk.js"
+    "revision": "ac977f9cf3107132c07b",
+    "url": "/MyTechBlog/static/js/2.e2f55edb.chunk.js"
   },
   {
     "revision": "c03d5f8f03da46303a31387a077319b9",
@@ -28,12 +28,44 @@ self.__precacheManifest = [
     "url": "/MyTechBlog/static/media/ga2_1.c4e558ff.png"
   },
   {
+    "revision": "301aa2e5f46267b069b5c2a9019b2c26",
+    "url": "/MyTechBlog/static/media/pyenv_1.301aa2e5.png"
+  },
+  {
+    "revision": "7f2e42b3bc4e7e2f8358ef1c1418d0ad",
+    "url": "/MyTechBlog/static/media/pyenv_2.7f2e42b3.png"
+  },
+  {
+    "revision": "cf4f0d84d96b161fc6e8f1684d1c8599",
+    "url": "/MyTechBlog/static/media/pyenv_3.cf4f0d84.png"
+  },
+  {
+    "revision": "47907349f5e42152d306ae862145f2c7",
+    "url": "/MyTechBlog/static/media/pyenv_4.47907349.png"
+  },
+  {
+    "revision": "fce4a1da009d90ef5565d1296e280e2e",
+    "url": "/MyTechBlog/static/media/pyenv_6.fce4a1da.png"
+  },
+  {
+    "revision": "62884ddea1b40aa78e55a5edcd27020a",
+    "url": "/MyTechBlog/static/media/pyenv_7.62884dde.png"
+  },
+  {
+    "revision": "372f212773d5a767bc149c87cfc96218",
+    "url": "/MyTechBlog/static/media/pyenv_8.372f2127.png"
+  },
+  {
     "revision": "5d1cbe34a9735953fd1af6ac18c13f8c",
     "url": "/MyTechBlog/static/media/bootstrap4.5d1cbe34.png"
   },
   {
     "revision": "af27fcd29fe3e3d137e4fd893c2e5da5",
     "url": "/MyTechBlog/static/media/googleAnalytics.af27fcd2.png"
+  },
+  {
+    "revision": "5d2329dae901e1d3fca416f32b545c6f",
+    "url": "/MyTechBlog/static/media/pyenv.5d2329da.png"
   },
   {
     "revision": "0291b1822ada87a90d327ebc99ce7241",
@@ -48,7 +80,7 @@ self.__precacheManifest = [
     "url": "/MyTechBlog/static/media/yuan.3474e5f3.png"
   },
   {
-    "revision": "1610be1c4993b5d3de25d5af1fd98b99",
+    "revision": "370bade78014a45541261ac69beb2df2",
     "url": "/MyTechBlog/index.html"
   }
 ];
