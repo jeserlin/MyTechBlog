@@ -39,6 +39,14 @@ const ArticleList = [
     thumbnail: 'googleAnalytics.png',
     description: '在Google Analytics也能讀取react-router的路徑！',
   },
+  {
+    title: 'pyenv: 輕鬆切換python版本',
+    time: '2019/09/15',
+    type: 'note',
+    link: '/pyenv',
+    thumbnail: 'pyenv.png',
+    description: '使用pyenv輕鬆建立虛擬環境 & 使用設定版本python。',
+  },
 ];
 
 export default ArticleList;
