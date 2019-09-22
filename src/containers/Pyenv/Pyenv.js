@@ -1,6 +1,7 @@
 import { ArticleContent, ArticleSubTitle, ArticleTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
 
+import { FaHashtag } from "react-icons/fa";
 import styled from 'styled-components';
 
 const Image =  styled.img`
@@ -8,7 +9,38 @@ const Image =  styled.img`
   margin: 1rem 0;
 `;
 
+const HashTag = styled(FaHashtag)`
+  color: #707037;
+`;
+
+const Link = styled.li`
+  cursor: pointer;
+  width: fit-content;
+  span {
+    transition: .3s;
+  }
+
+  &:hover {
+    span {
+      color: #707037;
+    }
+  }
+`;
+
 class Pyenv extends Component {
+  constructor(props) {
+    super(props);
+
+    this.goToSection = this.goToSection.bind(this);
+  }
+
+  goToSection = id => {
+    console.log(id);
+    const section = document.getElementById(id);
+    console.log(section);
+    section.scrollIntoView();
+  }
+
   render() {
     const image1 = require(`../../static/img/pyenv/pyenv_1.png`);
     const image2 = require(`../../static/img/pyenv/pyenv_2.png`);
@@ -28,13 +60,13 @@ class Pyenv extends Component {
         </ArticleContent>
         <ArticleContent>
           <ol>
-            <li><span className='emphasize'>安裝pyenv / pyenv-virtualenv</span></li>
-            <li><span className='emphasize'>安裝與設定設定python版本</span></li>
-            <li><span className='emphasize'>建立虛擬環境</span></li>
-            <li><span className='emphasize'>進入虛擬環境</span></li>
+            <Link onClick={() => this.goToSection('installPyenv')}><span className='emphasize'><HashTag />安裝pyenv / pyenv-virtualenv</span></Link>
+            <Link onClick={() => this.goToSection('installSetupPython')}><span className='emphasize'><HashTag />安裝與設定設定python版本</span></Link>
+            <Link onClick={() => this.goToSection('setUpEnv')}><span className='emphasize'><HashTag />建立虛擬環境</span></Link>
+            <Link onClick={() => this.goToSection('enterEnv')}><span className='emphasize'><HashTag />進入虛擬環境</span></Link>
           </ol>
         </ArticleContent>
-        <ArticleSubTitle>安裝pyenv / pyenv-virtualenv</ArticleSubTitle>
+        <ArticleSubTitle id='installPyenv'>安裝pyenv / pyenv-virtualenv</ArticleSubTitle>
         <ArticleContent>
           <div className='hightlight code'>
             $ brew update<br/>
@@ -61,7 +93,7 @@ class Pyenv extends Component {
           <Image src={image2} alt='image'/><br/>
           到這邊安裝就完成嘍～！
         </ArticleContent>
-        <ArticleSubTitle>安裝與設定python版本</ArticleSubTitle>
+        <ArticleSubTitle id='installSetupPython'>安裝與設定python版本</ArticleSubTitle>
         <ArticleContent>
           接下來要下載特定版本的python，下載之前可以用以下指令來看看有哪些版本可以下載：
           <div className='hightlight code'>
@@ -85,7 +117,7 @@ class Pyenv extends Component {
           <Image src={image5} alt='image'/><br/>
           確認看到剛剛下載的版本安裝就完成啦！
         </ArticleContent>
-        <ArticleSubTitle>建立虛擬環境</ArticleSubTitle>
+        <ArticleSubTitle id='setUpEnv'>建立虛擬環境</ArticleSubTitle>
         <ArticleContent>
           接下來就是最重要的一步了，為了有一個乾淨的開發環境。<br/>
           我們一般會幫每個專案建立一個虛擬環境，如此一來每個環境之間就不會互相影響了。<br/><br/>
@@ -100,7 +132,7 @@ class Pyenv extends Component {
           </div>
           <Image src={image7} alt='image'/><br/>
         </ArticleContent>
-        <ArticleSubTitle>進入虛擬環境</ArticleSubTitle>
+        <ArticleSubTitle id='enterEnv'>進入虛擬環境</ArticleSubTitle>
         <ArticleContent>
           完成以上步驟之後，使用以下指令就可以進入虛擬環境了：
           <div className='hightlight code'>
