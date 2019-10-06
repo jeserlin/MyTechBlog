@@ -80,7 +80,7 @@ self.__precacheManifest = [
     "url": "/MyTechBlog/static/media/yuan.3474e5f3.png"
   },
   {
-    "revision": "372146e9b73a20c6f7a5257f4bdab026",
+    "revision": "8ccb0548bb879e2c45214fe698b69440",
     "url": "/MyTechBlog/index.html"
   }
 ];
