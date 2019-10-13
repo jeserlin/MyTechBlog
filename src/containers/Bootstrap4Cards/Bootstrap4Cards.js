@@ -1,10 +1,16 @@
-import { ArticleContent, ArticleTitle, Iframe } from '../../components/Common/Common';
+import { ArticleContent, ArticleTitle, Iframe, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
+
+import {Helmet} from "react-helmet";
 
 class Bootstrap4Cards extends Component {
   render() {
     return (
       <div className='container'>
+        <Helmet>
+          <title>{PrefixTitle} - Bootstrap 4 – Cards (card columns)</title>
+          <meta name="keywords" content="Jeserlin, Bootstrap4,bootstrap-4.0,CSS,HTML" />
+        </Helmet>
         <ArticleTitle>[筆記]Bootstrap 4 – Cards (card columns)</ArticleTitle>
         <ArticleContent>
           Bootstrap 4 中的Cards 取代了 Bootstrap 3中的 panels、wells、thumbnails。<br />

@@ -1,6 +1,7 @@
-import { ArticleContent, ArticleSubTitle, ArticleTitle } from '../../components/Common/Common';
+import { ArticleContent, ArticleSubTitle, ArticleTitle, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
 
+import {Helmet} from "react-helmet";
 import styled from 'styled-components';
 
 const Image =  styled.img`
@@ -14,6 +15,10 @@ class GA1 extends Component {
     const image2 = require(`../../static/img/ga/ga1_2.png`);
     return (
       <div className='container'>
+        <Helmet>
+          <title>{PrefixTitle} - 在React上設定GA Part1</title>
+          <meta name="keywords" content="Jeserlin, React, GA, google analytics, seo" />
+        </Helmet>
         <ArticleTitle>[筆記]在React上設定GA Part1</ArticleTitle>
         <ArticleContent>
           開始在github page上建自己的blog有一小段時間了，<br />

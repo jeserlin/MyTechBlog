@@ -8,8 +8,10 @@ import Bootstrap4Cards from './containers/Bootstrap4Cards';
 import Footer from './components/Footer';
 import GA1 from './containers/GA1';
 import GA2 from './containers/GA2';
+import {Helmet} from "react-helmet";
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
+import { PrefixTitle } from './components/Common/Common';
 import PropTypes from 'prop-types';
 import Pyenv from './containers/Pyenv';
 import ReactBootstrap from './containers/ReactBootstrap';
@@ -98,6 +100,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Helmet>
+          <title>{PrefixTitle}</title>
+          <meta name="keywords" content="Jeserlin, Frontend, JavaScript, React, HTML, CSS" />
+        </Helmet>
         <NavBar />
         <Router>
           <Route path="/" exact component={withTracker(this.index)} />

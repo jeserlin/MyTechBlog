@@ -1,6 +1,7 @@
-import { ArticleContent, ArticleSubTitle, ArticleTitle } from '../../components/Common/Common';
+import { ArticleContent, ArticleSubTitle, ArticleTitle, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
 
+import {Helmet} from "react-helmet";
 import styled from 'styled-components';
 
 const Image =  styled.img`
@@ -14,6 +15,10 @@ class GA2 extends Component {
     const image2 = require(`../../static/img/ga/ga2_1.png`);
     return (
       <div className='container'>
+        <Helmet>
+          <title>{PrefixTitle} - 在React上設定GA Part2</title>
+          <meta name="keywords" content="Jeserlin, React, GA, google analytics, seo" />
+        </Helmet>
         <ArticleTitle>[筆記]在React上設定GA Part2</ArticleTitle>
         <ArticleContent>
           在<a href='/#/ga1'>上一篇</a>文章中已經設定好可以在GA dashboard上看總覽人數了,<br/>

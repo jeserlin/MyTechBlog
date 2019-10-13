@@ -1,10 +1,16 @@
-import { ArticleContent, ArticleSubTitle, ArticleTitle, Iframe } from '../../components/Common/Common';
+import { ArticleContent, ArticleSubTitle, ArticleTitle, Iframe, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
+
+import {Helmet} from "react-helmet";
 
 class ReactBootstrap extends Component {
   render() {
     return (
       <div className='container'>
+        <Helmet>
+          <title>{PrefixTitle} - React Bootstrap - WHY & HOW？</title>
+          <meta name="keywords" content="Jeserlin, React, react-bootstrap" />
+        </Helmet>
         <ArticleTitle>[筆記]React Bootstrap - WHY & HOW？</ArticleTitle>
         <ArticleSubTitle>WHY?</ArticleSubTitle>
         <ArticleContent>

@@ -1,11 +1,17 @@
-import { ArticleContent, ArticleSubTitle, ArticleTitle, Iframe } from '../../components/Common/Common';
+import { ArticleContent, ArticleSubTitle, ArticleTitle, Iframe, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
+
+import {Helmet} from "react-helmet";
 
 class StyledComponent extends Component {
   render() {
     return(
       <div className='container'>
-        <ArticleTitle>[筆記]styled-component - WHY & HOW</ArticleTitle>
+        <Helmet>
+          <title>{PrefixTitle} - styled-component - WHY & HOW</title>
+          <meta name="keywords" content="Jeserlin, React, css, style, styled-component" />
+        </Helmet>
+        <ArticleTitle>[筆記] styled-component - WHY & HOW</ArticleTitle>
         <ArticleSubTitle>WHY?</ArticleSubTitle>
         <ArticleContent>
           踏入React的世界之後，在view的方面我們最常煩惱的大概就是 — 某個元素到底該不該被獨立成一個component？<br />

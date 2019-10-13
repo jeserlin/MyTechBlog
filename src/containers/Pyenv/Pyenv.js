@@ -1,7 +1,8 @@
-import { ArticleContent, ArticleSubTitle, ArticleTitle } from '../../components/Common/Common';
+import { ArticleContent, ArticleSubTitle, ArticleTitle, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
 
 import { FaHashtag } from "react-icons/fa";
+import {Helmet} from "react-helmet";
 import styled from 'styled-components';
 
 const Image =  styled.img`
@@ -52,6 +53,10 @@ class Pyenv extends Component {
     const image8 = require(`../../static/img/pyenv/pyenv_8.png`);
     return (
       <div className='container'>
+        <Helmet>
+          <title>{PrefixTitle} - pyenv: 輕鬆切換python版本</title>
+          <meta name="keywords" content="Jeserlin, pyenv, python, version control, 版本控管" />
+        </Helmet>
         <ArticleTitle>[筆記] pyenv: 輕鬆切換python版本</ArticleTitle>
         <ArticleContent>
           pyenv 是一個管理python版本的套件，

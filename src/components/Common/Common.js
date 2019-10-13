@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+export const PrefixTitle = 'Jeserlin\'s Blog';
+
 // Remove Link style from react-router
 export const StyledLink = styled(Link)`
     text-decoration: none;
