@@ -10,7 +10,7 @@ const Image =  styled.img`
 
 class GA2 extends Component {
   render() {
-    const image1 = require(`../../static/img/ga/ga1_1.png`);
+    const image1 = require(`../../static/img/ga/ga1_2.png`);
     const image2 = require(`../../static/img/ga/ga2_1.png`);
     return (
       <div className='container'>
@@ -42,7 +42,7 @@ class GA2 extends Component {
             {'const HOC = props => {'}<br/>
             {
               // eslint-disable-next-line
-            }&nbsp;&nbsp;&nbsp;&nbsp;{'useEffect(() => trackPage(`MyTechBlog${props.location.pathname}`), ['}<br/>
+            }&nbsp;&nbsp;&nbsp;&nbsp;{'useEffect(() => trackPage'}<u className='emphasize'>{'(`MyTechBlog${props.location.pathname}`)'}</u>{', ['}<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'props.location.pathname'}<br/>
             &nbsp;&nbsp;&nbsp;&nbsp;{']);'}<br/>
 
@@ -54,7 +54,7 @@ class GA2 extends Component {
 
               {'export default withTracker;'}<br/>
           </div>
-          如果你的domain有多個page的話，為了較好地在GA上區分user瀏覽的頁面，你可以在trackPage這邊加入上一層的路徑（粗體+底線的部分）。<br/>
+          如果你的domain有多個page的話，為了較好地在GA上區分user瀏覽的頁面，你可以在trackPage這邊加入上一層的路徑（底線+墨綠色部分）。<br/>
           以上是react-ga提供的方法，可以在這邊看更多資訊：<br/>
           <a href='https://github.com/react-ga/react-ga/wiki/React-Router-v4-withTracker' target='_blank' rel='noopener noreferrer'>
             https://github.com/react-ga/react-ga/wiki/React-Router-v4-withTracker
