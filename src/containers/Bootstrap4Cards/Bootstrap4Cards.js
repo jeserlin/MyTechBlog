@@ -1,4 +1,4 @@
-import { ArticleContent, ArticleTitle, Iframe, PrefixTitle } from '../../components/Common/Common';
+import { ArticleContent, ArticleTitle, Container, Iframe, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
 
 import {Helmet} from "react-helmet";
@@ -6,7 +6,7 @@ import {Helmet} from "react-helmet";
 class Bootstrap4Cards extends Component {
   render() {
     return (
-      <div className='container'>
+      <Container>
         <Helmet>
           <title>{PrefixTitle} - Bootstrap 4 – Cards (card columns)</title>
           <meta name="keywords" content="Jeserlin, Bootstrap4,bootstrap-4.0,CSS,HTML" />
@@ -36,7 +36,7 @@ class Bootstrap4Cards extends Component {
             (<a href='https://codepen.io/jeserlin'>@jeserlin</a>) on <a href='https://codepen.io'>CodePen</a>.
           </Iframe><br />
         </ArticleContent>
-      </div>
+      </Container>
     );
   }
 }

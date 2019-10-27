@@ -36,18 +36,18 @@ class Article extends Component {
       <Container>
         <StyledLink to={data[this.props.seq].link}>
           <Card>
-            <div class="row no-gutters">
-              <div class="col-md-4">
+            <div className="row no-gutters">
+              <div className="col-md-4">
                 <Image className='rounded' src={thumbnail} alt='img'/> 
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
+              <div className="col-md-8">
+                <div className="card-body">
                   <Title>{data[this.props.seq].title}</Title>
                   <Desc>
                     {data[this.props.seq].description}
                   </Desc>
                 </div>
-                <div class="card-footer">
+                <div className="card-footer">
                   <UpdateTime>更新時間： {data[this.props.seq].time}</UpdateTime>
                 </div>
               </div>

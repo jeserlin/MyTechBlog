@@ -1,4 +1,4 @@
-import { ArticleContent, ArticleSubTitle, ArticleTitle, PrefixTitle } from '../../components/Common/Common';
+import { ArticleContent, ArticleSubTitle, ArticleTitle, Container, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
 
 import {Helmet} from "react-helmet";
@@ -14,14 +14,14 @@ class GA2 extends Component {
     const image1 = require(`../../static/img/ga/ga1_2.png`);
     const image2 = require(`../../static/img/ga/ga2_1.png`);
     return (
-      <div className='container'>
+      <Container>
         <Helmet>
           <title>{PrefixTitle} - 在React上設定GA Part2</title>
           <meta name="keywords" content="Jeserlin, React, GA, google analytics, seo" />
         </Helmet>
         <ArticleTitle>[筆記]在React上設定GA Part2</ArticleTitle>
         <ArticleContent>
-          在<a href='/#/ga1'>上一篇</a>文章中已經設定好可以在GA dashboard上看總覽人數了,<br/>
+          在<a href='/#/ga1'>上一篇</a>文章中已經設定好可以在GA dashboard上看總覽人數了,
           但由於我是使用react-router，在沒有多做一些處理的前提下只能抓到index的路徑。<br/>
           <Image src={image1} alt='image'/>
           今天這邊文章會紀錄如何讓GA能讀取react-router的路徑！
@@ -59,7 +59,7 @@ class GA2 extends Component {
 
               {'export default withTracker;'}<br/>
           </div>
-          如果你的domain有多個page的話，為了較好地在GA上區分user瀏覽的頁面，你可以在trackPage這邊加入上一層的路徑（底線+墨綠色部分）。<br/>
+          如果你的domain有多個page的話，為了較好地在GA上區分user瀏覽的頁面，你可以在trackPage這邊加入上一層的路徑（底線+墨綠色部分）。
           以上是react-ga提供的方法，可以在這邊看更多資訊：<br/>
           <a href='https://github.com/react-ga/react-ga/wiki/React-Router-v4-withTracker' target='_blank' rel='noopener noreferrer'>
             https://github.com/react-ga/react-ga/wiki/React-Router-v4-withTracker
@@ -83,11 +83,11 @@ class GA2 extends Component {
         <ArticleContent>
           接下來開啟隨便一個router的路徑，然後到google analytics的dashboard，就可以看到成果了喔～！<br/>
           <Image src={image2} alt='image'/>
-          從上圖我們可以看到原本顯示的是‘/MyTechBlog’，現在則是直接顯示我們在react-router中設定的路徑。<br/>
+          從上圖我們可以看到原本顯示的是 ‘/MyTechBlog’，現在則是直接顯示我們在react-router中設定的路徑。<br/>
           如此以來我們就可以很清楚的查看user到底在瀏覽哪一頁。<br/>
           設定好GA也過了3個禮拜了，雖然來的人不多但是感覺能看到實際的數字蠻有趣的。接下來的目標就是研究如何提升人數！
         </ArticleContent>
-      </div>
+      </Container>
     );
   }
 }

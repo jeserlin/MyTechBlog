@@ -1,4 +1,4 @@
-import { ArticleContent, ArticleSubTitle, ArticleTitle, PrefixTitle } from '../../components/Common/Common';
+import { ArticleContent, ArticleSubTitle, ArticleTitle, Container, PrefixTitle } from '../../components/Common/Common';
 import React, { Component } from 'react';
 
 import { FaHashtag } from "react-icons/fa";
@@ -8,6 +8,11 @@ import styled from 'styled-components';
 const Image =  styled.img`
   width: 50%;
   margin: 1rem 0;
+
+  /* RWD */
+    @media (max-width: 576px) {
+      width: 100%;
+  }
 `;
 
 const HashTag = styled(FaHashtag)`
@@ -52,7 +57,7 @@ class Pyenv extends Component {
     const image7 = require(`../../static/img/pyenv/pyenv_7.png`);
     const image8 = require(`../../static/img/pyenv/pyenv_8.png`);
     return (
-      <div className='container'>
+      <Container>
         <Helmet>
           <title>{PrefixTitle} - pyenv: 輕鬆切換python版本</title>
           <meta name="keywords" content="Jeserlin, pyenv, python, version control, 版本控管" />
@@ -161,7 +166,7 @@ class Pyenv extends Component {
             </ol>
           </div>
         </ArticleContent>
-      </div>
+      </Container>
     )
   }
 }

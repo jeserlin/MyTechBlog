@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
+import React from 'react';
+import classnames from 'classnames';
 import styled from 'styled-components';
-
 export const PrefixTitle = 'Jeserlin\'s Blog';
 
 // Remove Link style from react-router
@@ -46,6 +47,23 @@ export const UpdateTime = styled.div`
 `;
 
 // Article page
+export const Container =  ({ className, children }) => (
+  <div
+    className={classnames('container', className)}
+    style={{marginBottom: '2rem'}}
+    >
+      <div
+        className={classnames('row', className)}
+      >
+        <div
+          className={classnames('col-sm-10 offset-sm-1', className)}
+        >
+          {children}
+        </div>
+      </div>
+  </div>
+);
+
 export const ArticleTitle = styled.div`
   font-size: 3rem;
   margin: 2rem 0;
