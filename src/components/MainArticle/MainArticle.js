@@ -1,4 +1,4 @@
-import {Desc, Image, StyledLink, Title} from '../Common/Common';
+import {Desc, Image, StyledLink, Title, UpdateTime} from '../Common/Common';
 import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
@@ -21,6 +21,7 @@ class MainArticle extends Component {
     const title = data[0] ? data[0].title : '';
     const thumbnail = data[0] ? require(`../../static/img/${data[0].thumbnail}`) : '';
     const desc = data[0] ? data[0].description : '';
+    const updateTime = data[0] ? data[0].time : '';
     return (
       <Container>
         <div className='col-md-12 col-lg-4'>
@@ -33,6 +34,7 @@ class MainArticle extends Component {
             <Title>{title}</Title>
           </StyledLink>
           <Desc>{desc}</Desc>
+          <UpdateTime>更新時間： {updateTime}</UpdateTime>
         </div>
       </Container>
     );

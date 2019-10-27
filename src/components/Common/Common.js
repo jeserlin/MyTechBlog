@@ -37,7 +37,6 @@ export const Desc = styled.div`
   font-size: 1.6rem;
   text-align: left;
   color: rgba(0,0,0,.54)!important;
-  height: 4.8rem;
 `;
 
 export const UpdateTime = styled.div`
