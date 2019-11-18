@@ -23,7 +23,7 @@ class NextJs1 extends Component {
             前言
           </ArticleSubTitle>
           <ArticleContent>
-            在我們建立一個React的專案時，一般都會使用官方提供的<a href='https://github.com/facebook/create-react-app' target='_blank'>create-react-app</a>。
+            在我們建立一個React的專案時，一般都會使用官方提供的<a href='https://github.com/facebook/create-react-app' target='_blank' rel='noopener noreferrer'>create-react-app</a>。
             雖然可以快速的建立一個React的專案，但是學習曲線還是偏高。
             比如說設定webpack，router等等。更別說如果你需要處理SEO的話，
             還需要server-side render你的頁面。Next.js是一個React Framework，他提供了許多功能可以輕鬆解決剛剛提到的困擾：<br />
@@ -39,7 +39,7 @@ class NextJs1 extends Component {
             建立
           </ArticleSubTitle>
           <ArticleContent>
-            其實官網提供了很不錯的step by step的<a href='https://nextjs.org/learn/basics/getting-started' target='_blank'>教學</a>，
+            其實官網提供了很不錯的step by step的<a href='https://nextjs.org/learn/basics/getting-started' target='_blank' rel='noopener noreferrer'>教學</a>，
             在每完成一步之後都會得到一些點數，目前不是很清楚這些點數能幹嘛XDD，
             但是似乎給了一些繼續往下學習的動力lol<br />
             <Image src={image1} alt='image' style={{width: '30%'}}/><br />
@@ -83,8 +83,8 @@ class NextJs1 extends Component {
           </ArticleSubTitle>
           <ArticleContent>
             <ul>
-              <li><a href='https://nextjs.org/#features' target='_blank'>https://nextjs.org/#features</a></li>
-              <li><a href='https://nextjs.org/learn/basics/getting-started' target='_blank'>https://nextjs.org/learn/basics/getting-started</a></li>
+              <li><a href='https://nextjs.org/#features' target='_blank' rel='noopener noreferrer'>https://nextjs.org/#features</a></li>
+              <li><a href='https://nextjs.org/learn/basics/getting-started' target='_blank' rel='noopener noreferrer'>https://nextjs.org/learn/basics/getting-started</a></li>
             </ul>
           </ArticleContent>
       </Container>
