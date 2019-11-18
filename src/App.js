@@ -11,6 +11,7 @@ import GA2 from './containers/GA2';
 import {Helmet} from "react-helmet";
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
+import NextJs1 from './containers/NextJs1';
 import { PrefixTitle } from './components/Common/Common';
 import PropTypes from 'prop-types';
 import Pyenv from './containers/Pyenv';
@@ -97,6 +98,11 @@ class App extends Component {
   pyenv() {
     return <Pyenv />
   }
+
+  nextJs1() {
+    return <NextJs1 />
+  }
+  
   render() {
     return (
       <div className="App">
@@ -113,6 +119,7 @@ class App extends Component {
           <Route path="/ga1/" component={withTracker(this.ga1)} />
           <Route path="/ga2/" component={withTracker(this.ga2)} />
           <Route path="/pyenv/" component={withTracker(this.pyenv)} />
+          <Route path="/nextJs1/" component={withTracker(this.nextJs1)} />
         </Router>
         <Footer/>
       </div>

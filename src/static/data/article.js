@@ -47,6 +47,14 @@ const ArticleList = [
     thumbnail: 'pyenv.png',
     description: '使用pyenv輕鬆建立虛擬環境 & 使用設定版本python。',
   },
+  {
+    title: 'Next.js #1( 建立 )',
+    time: '2019/11/18',
+    type: 'note',
+    link: '/nextJs1',
+    thumbnail: 'nextJs.png',
+    description: 'Next.js是React官方推薦作為server side rendering的框架！',
+  }
 ];
 
 export default ArticleList;
