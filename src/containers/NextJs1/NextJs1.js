@@ -12,6 +12,7 @@ class NextJs1 extends Component {
   render() {
     const image1 = require(`../../static/img/nextJs/nextJs1_1.png`);
     const image2 = require(`../../static/img/nextJs/nextJs1_2.png`);
+    const image3 = require(`../../static/img/nextJs/nextJs1_3.png`);
     return (
       <Container>
           <Helmet>
@@ -77,6 +78,7 @@ class NextJs1 extends Component {
               export default Index;<br />
             </div>
             再次refresh頁面就會看到index頁面了！<br />
+            <Image src={image3} alt='image' style={{width: '50%'}}/><br />
             如果你有開發過react專案的話，此時此刻一定會感受到Next.js中router的強大之處。
             我們只要export一個React Component然後把他放在pages folder下，就可以得到一個以檔案名一樣的固定URL，完全不需要額外的處理。
             不過這邊的render方式是server-side renderding，下一篇會主要紀錄server-side rendering跟client-side rendering。
