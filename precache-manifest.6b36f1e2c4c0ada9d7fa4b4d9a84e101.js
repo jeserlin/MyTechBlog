@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "fc4ee5d4781bdd63987f",
+    "revision": "e1032632df186e82a8b0",
     "url": "/MyTechBlog/static/css/main.dd7bbe15.chunk.css"
   },
   {
-    "revision": "fc4ee5d4781bdd63987f",
-    "url": "/MyTechBlog/static/js/main.0618b555.chunk.js"
+    "revision": "e1032632df186e82a8b0",
+    "url": "/MyTechBlog/static/js/main.e09cfbb5.chunk.js"
   },
   {
     "revision": "9d4ebaa74210618b0d88",
     "url": "/MyTechBlog/static/js/runtime~main.6302f219.js"
   },
   {
-    "revision": "7213b76f545f1e33ba0e",
-    "url": "/MyTechBlog/static/js/2.84e0df7d.chunk.js"
+    "revision": "3e3c99b9eb13376e6834",
+    "url": "/MyTechBlog/static/js/2.f6091a50.chunk.js"
   },
   {
     "revision": "9f4cea27bb130bf91c535f3d9d0f0c6a",
@@ -34,6 +34,34 @@ self.__precacheManifest = [
   {
     "revision": "2605799fc3f46585395abaafbfda7e58",
     "url": "/MyTechBlog/static/media/nextJs1_2.2605799f.png"
+  },
+  {
+    "revision": "66fc9ab3306015858b7ba77ffa424551",
+    "url": "/MyTechBlog/static/media/nextJs1_3.66fc9ab3.png"
+  },
+  {
+    "revision": "399cac3250971e653e9b1b70227cb3fd",
+    "url": "/MyTechBlog/static/media/nextJs2_1.399cac32.png"
+  },
+  {
+    "revision": "0ed90bef78c8841a5e6d8fe6bc130171",
+    "url": "/MyTechBlog/static/media/nextJs2_2.0ed90bef.png"
+  },
+  {
+    "revision": "990257f7f25681f92e92112c149d5b67",
+    "url": "/MyTechBlog/static/media/nextJs2_3.990257f7.png"
+  },
+  {
+    "revision": "e64470e738d273b48462cdca50755dfd",
+    "url": "/MyTechBlog/static/media/nextJs2_4.e64470e7.png"
+  },
+  {
+    "revision": "03e4a5b59ace090425edd9ae59b7288a",
+    "url": "/MyTechBlog/static/media/nextJs2_5.03e4a5b5.png"
+  },
+  {
+    "revision": "8aa485c078abe8ee2e9612736a5b14c4",
+    "url": "/MyTechBlog/static/media/nextJs2_6.8aa485c0.png"
   },
   {
     "revision": "301aa2e5f46267b069b5c2a9019b2c26",
@@ -92,7 +120,7 @@ self.__precacheManifest = [
     "url": "/MyTechBlog/static/media/yuan.3474e5f3.png"
   },
   {
-    "revision": "dad816f93f8b4e1253daf6bfb6c43ada",
+    "revision": "3ab2014f97f186e42ffa72f24ac9b6ed",
     "url": "/MyTechBlog/index.html"
   }
 ];
