@@ -54,6 +54,14 @@ const ArticleList = [
     link: '/nextJs1',
     thumbnail: 'nextJs.png',
     description: 'Next.js是React官方推薦作為server side rendering的框架！',
+  },
+  {
+    title: 'Next.js #2( Router )',
+    time: '2019/11/24',
+    type: 'note',
+    link: '/nextJs2',
+    thumbnail: 'nextJs.png',
+    description: 'Next.js提供了Link API，讓我們輕鬆處理server side和client side的routing。',
   }
 ];
 

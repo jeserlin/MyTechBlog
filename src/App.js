@@ -12,6 +12,7 @@ import {Helmet} from "react-helmet";
 import MainArticle from './components/MainArticle';
 import NavBar from './components/NavBar';
 import NextJs1 from './containers/NextJs1';
+import NextJs2 from './containers/NextJs2';
 import { PrefixTitle } from './components/Common/Common';
 import PropTypes from 'prop-types';
 import Pyenv from './containers/Pyenv';
@@ -103,6 +104,10 @@ class App extends Component {
     return <NextJs1 />
   }
   
+  nextJs2() {
+    return <NextJs2 />
+  }
+
   render() {
     return (
       <div className="App">
@@ -120,6 +125,7 @@ class App extends Component {
           <Route path="/ga2/" component={withTracker(this.ga2)} />
           <Route path="/pyenv/" component={withTracker(this.pyenv)} />
           <Route path="/nextJs1/" component={withTracker(this.nextJs1)} />
+          <Route path="/nextJs2/" component={withTracker(this.nextJs2)} />
         </Router>
         <Footer/>
       </div>

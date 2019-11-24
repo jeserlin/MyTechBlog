@@ -24,10 +24,10 @@ class NextJs2 extends Component {
     return (
       <Container>
           <Helmet>
-            <title>{PrefixTitle} - Next.js #2( Render )</title>
+            <title>{PrefixTitle} - Next.js #2( Router )</title>
             <meta name="keywords" content="Jeserlin, React, Next.js, React Framework" />
           </Helmet>
-          <ArticleTitle>[筆記]Next.js #2( Render )</ArticleTitle>
+          <ArticleTitle>[筆記]Next.js #2( Router )</ArticleTitle>
           <ArticleSubTitle>
             前言
           </ArticleSubTitle>
