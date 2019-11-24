@@ -6,6 +6,11 @@ import styled from 'styled-components';
 
 const Image =  styled.img`
   margin: 1rem 0;
+
+  /* RWD */
+  @media (max-width: 576px) {
+      width: 100% !important;
+  }
 `;
 
 class NextJs1 extends Component {
@@ -16,10 +21,10 @@ class NextJs1 extends Component {
     return (
       <Container>
           <Helmet>
-            <title>{PrefixTitle} - Next.js #1( 建立)</title>
+            <title>{PrefixTitle} - Next.js #1( 建立 )</title>
             <meta name="keywords" content="Jeserlin, React, Next.js, React Framework" />
           </Helmet>
-          <ArticleTitle>[筆記]Next.js #1( 建立)</ArticleTitle>
+          <ArticleTitle>[筆記]Next.js #1( 建立 )</ArticleTitle>
           <ArticleSubTitle>
             前言
           </ArticleSubTitle>
